@@ -1,3 +1,7 @@
+
+100 Days of DevOps
+
+
 Day 1: Linux User Setup with Non-Interactive Shell
 
 sudo useradd kareem -s /sbin/nologin
@@ -5,3 +9,6 @@ sudo useradd kareem -s /sbin/nologin
 cat passwd /etc/passwd
 
 ---------------------------------------
+Day 2: Temporary User Setup with Expiry
+
+sudo useradd -e 2023-12-07 kareem
