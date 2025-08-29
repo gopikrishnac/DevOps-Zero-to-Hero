@@ -12,3 +12,27 @@ cat passwd /etc/passwd
 Day 2: Temporary User Setup with Expiry
 
 sudo useradd -e 2023-12-07 kareem
+
+
+-----------------------------
+
+Day 3: Secure Root SSH Access
+
+Edit the SSH daemon configuration: Open the sshd_config file using a text editor with sudo privileges.
+    sudo vi /etc/ssh/sshd_config
+	
+	
+Modify PermitRootLogin: Locate the line PermitRootLogin yes (it might be commented out with a #). Uncomment the line (if necessary) and change yes to no.
+	
+	#PermitRootLogin yes
+    PermitRootLogin no
+	
+Save and exit: Save the changes to the sshd_config file and exit the text editor.
+
+Restart the SSH service: Apply the changes by restarting the sshd service.
+	
+	sudo systemctl restart sshd
+	
+-------------------------------------------------	
+	
+	
