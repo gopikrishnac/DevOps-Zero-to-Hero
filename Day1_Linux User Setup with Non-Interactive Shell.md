@@ -1,4 +1,4 @@
-Day 1: 
+Day 1: Linux User Setup with Non-Interactive Shell
 
 sudo useradd kareem -s /sbin/nologin
 
